@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cocktail Calculator</h1>
+      <div class="row">
+        <div class="four columns">
+          <label for="ingredient">Ingredient:</label>
+          <input type="text" id="ingredient" class="u-full-width" placeholder="Ingredient">
+        </div>
+        <div class="four columns">
+          <label for="quantityUsed">Quantity Used:</label>
+          <input type="number" id="quantityUsed" class="u-full-width" placeholder="Quantity Used">
+        </div>
+        <div class="four columns">
+          <label for="unitSelectUsed">Unit:</label>
+          <select id="unitSelectUsed" class="u-full-width">
+            <option value="ml">ml</option>
+            <option value="L">L</option>
+            <option value="oz">oz</option>
+            <option value="lbs">lbs</option>
+            <option value="g">g</option>
+            <option value="kg">kg</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">
+          <label for="quantityPurchased">Quantity Purchased:</label>
+          <input type="number" id="quantityPurchased" class="u-full-width" placeholder="Quantity Purchased">
+        </div>
+        <div class="four columns">
+          <label for="unitSelectPurchased">Unit:</label>
+          <select id="unitSelectPurchased" class="u-full-width">
+            <option value="ml">ml</option>
+            <option value="L">L</option>
+            <option value="oz">oz</option>
+            <option value="lbs">lbs</option>
+            <option value="g">g</option>
+            <option value="kg">kg</option>
+          </select>
+        </div>
+        <div class="four columns">
+          <label for="totalCost">Total Cost USD:</label>
+          <input type="number" id="totalCost" class="u-full-width" placeholder="Total Cost">
+        </div>
+      </div>
+      <button id="addButton" class="button-primary">Add Ingredient</button>
+      <table id="ingredientTable" class="u-full-width">
+        <thead>
+          <tr>
+            <th>Ingredient</th>
+            <th>Cost per Cocktail</th>
+            <th>Amount Used</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <p id="totalCostDisplay">Total Cost per Cocktail: $0.00</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
